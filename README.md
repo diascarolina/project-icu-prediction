@@ -1,1 +1,1 @@
-# project-icu-prediction
+# ICU Prediction
