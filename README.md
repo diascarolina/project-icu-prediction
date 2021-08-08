@@ -1,11 +1,11 @@
-# Covid-19 - Clinical Data to Assess Diagnosis
+# Covid-19 - Clinical Data to Assess Diagnosis 👩‍⚕️
 [<img src="https://img.shields.io/badge/author-Carolina%20Dias-ff69b4?style=flat-square"/>](https://github.com/diascarolina) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg?style=flat-square)](https://github.com/diascarolina/project-icu-prediction/blob/main/LICENSE)
 
 <p align="center">
   <img width="700" src="https://i.imgur.com/wxaTMWn.png">
 </p>
 
-# Table of Contents
+# Table of Contents 📜
 
 1. [What **problem** do we have here? What can we do to **help**?](#intro)
 2. [Where did this **data** come from? What kind of **information** do we have in it?](#dat)
@@ -18,8 +18,10 @@
 9. [References](#refs)
 10. [Contact](#contac)
 
+🟢 [Click here](https://carodias.medium.com/prevendo-a-admiss%C3%A3o-de-pacientes-de-covid-19-na-uti-com-machine-learning-2b51d3c3ac09) to read a summary of this project on Medium (in portuguese).
+
 <a name="intro"></a>
-# What **problem** do we have here? What can we do to **help**?
+# What **problem** do we have here? What can we do to **help**? ⁉️
 
 The COVID-19 pandemic. Unfortunately we are all aware of it by now. We all know the sad and high number of deaths and the hopeful increasing number of vaccinated people (in some countries).
 
@@ -29,18 +31,18 @@ In this context, brazilian hospital Sírio-Libânes [published a dataset at Kagg
 
 The tasks at hand are:
 
-🟢 **Task 01:** Predict admission to the ICU of confirmed COVID-19 cases.
+1️⃣ **Task 01:** Predict admission to the ICU of confirmed COVID-19 cases.
 
 Based on the data available, is it feasible to predict which patients will need intensive care unit support?
 The aim is to provide tertiary and quarternary hospitals with the most accurate answer, so ICU resources can be arranged or patient transfer can be scheduled.
 
-🟢 **Task 02:** Predict NOT admission to the ICU of confirmed COVID-19 cases.
+2️⃣ **Task 02:** Predict NOT admission to the ICU of confirmed COVID-19 cases.
 
 Based on the subsample of widely available data, is it feasible to predict which patients will need intensive care unit support?
 The aim is to provide local and temporary hospitals a good enough answer, so frontline physicians can safely discharge and remotely follow up with these patients.
 
 <a name="dat"></a>
-# Where did we get this **data**? What kind of **information** do we have in it?
+# Where did we get this **data**? What kind of **information** do we have in it? 📂
 
 The data was taken directly from the [Kaggle problem](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19) and uploaded to [Github](https://github.com/diascarolina/data-science-bootcamp/blob/main/data/Kaggle_Sirio_Libanes_ICU_Prediction.xlsx?raw=true) for easy access.
 
@@ -84,7 +86,7 @@ Window | Description
 **Above-12** | Above 12 hours from admission
 
 <a name="method"></a>
-# What **methodology** did we use for our analysis? What were the **steps taken**?
+# What **methodology** did we use for our analysis? What were the **steps taken**? 🤔
 
 This project was divided into two main notebooks:
 
@@ -115,7 +117,7 @@ Finally, for the **machine learning** part we followed:
 </p>
 
 <a name="find"></a>
-# Main Findings & Predictions
+# Main Findings & Predictions 📊🔮
 
 After our data cleaning process, we ended up with
 
@@ -142,7 +144,7 @@ After taking a deeper look at the two best performing models, **LGBMClassifier**
 </p>
 
 <a name="conc"></a>
-# What can we **conclude** from this project?
+# What can we **conclude** from this project? 🔎
 
 From the cleaning part, we see that some data preparation was need in order to get an accurate sense of the data and to obtain the right kind information for analysis.
 
@@ -153,7 +155,7 @@ COVID-19 has taken an enormous toll on healthcare systems all around the globe. 
 In this project we have seen that this is possible, but this tool can never be used alone (unless its predictions were right 100% of the time, but we're far from a model that achieves that). There needs to be a healthcare professional with better judgement than our models to assess the need for ICU admission.
 
 <a name="fut"></a>
-# For Future Projects...
+# For Future Projects... 💡
 
 For next projects, better hyperparameter tuning could lead to improved results and predictions.
 
@@ -162,7 +164,7 @@ This project could also be applied to other diseases, with the appropriate care 
 An interesting idea could be to implement a web app (for example, a Streamlit application) that receives the relevant information for a patient (or for a group of patients) and returns the prediction for the need of said patient to go to the ICU. It could also output a confidence value for that prediction, so healthcare professionals could take a closer look at patients in which the model could not predict very well.
 
 <a name="tech"></a>
-# Technologies Used
+# Technologies Used 💻
 
 The notebooks were produced in [Google Colab](https://colab.research.google.com/) with the following libraries:
 - Pandas 1.0.5
@@ -175,20 +177,24 @@ The notebooks were produced in [Google Colab](https://colab.research.google.com/
 - Lazy Predict 0.2.9
 
 <a name="ack"></a>
-# Acknowledgments
+# Acknowledgments 🤝
 
 This is the final project from [Alura](https://www.alura.com.br/)'s Data Science Bootcamp. Thanks for all the lessons to the instructors Thiago Gonçalves, Guilherme Silveira, Allan Spadini and last but not least, Karoline Penteado.
 
 And thanks to my new friends who helped me all the way, Valquíria Alencar and Júnior Torres.
 
 <a name="refs"></a>
-# References
+# References 📋
 
 🟢 [Click here for the references used in this project.](https://github.com/diascarolina/project-icu-prediction/blob/main/docs/README.md)
 
 <a name="contac"></a>
-# Contacts
+# Contacts 📬
 
 Any tips or suggestions? Feel free to contact me!
 
 [<img src="https://img.shields.io/badge/carodias-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/carodias/) [<img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=Gmail&logoColor=white" />](mailto:carolinadiasw@gmail.com)
+
+<p align="center">
+    <img width="300" src="https://i.giphy.com/media/W1emeLXnYsX8TDmhS5/giphy.webp">
+</p>
