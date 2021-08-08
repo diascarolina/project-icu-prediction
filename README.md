@@ -181,7 +181,11 @@ The notebooks were produced in [Google Colab](https://colab.research.google.com/
 <a name="refs"></a>
 # References
 
-
+🟢 [Click here for the references used in this project.](https://github.com/diascarolina/project-icu-prediction/blob/main/docs/README.md)
 
 <a name="contac"></a>
-# Contact
+# Contacts
+
+Any tips or suggestions? Feel free to contact me!
+
+[<img src="https://img.shields.io/badge/carodias-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/carodias/) [<img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=Gmail&logoColor=white" />](mailto:carolinadiasw@gmail.com)
