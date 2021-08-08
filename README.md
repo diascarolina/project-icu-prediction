@@ -1,7 +1,9 @@
 # COVID-19 - Clinical Data to Assess Diagnosis
-[<img src="https://img.shields.io/badge/author-Carolina%20Dias-ff69b4?style=flat-square"/>](https://github.com/diascarolina) [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=flat-square&logo=Jupyter)](https://jupyter.org/try) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg?style=flat-square)](https://github.com/diascarolina/project-icu-prediction/blob/main/LICENSE)
+[<img src="https://img.shields.io/badge/author-Carolina%20Dias-ff69b4?style=flat-square"/>](https://github.com/diascarolina) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg?style=flat-square)](https://github.com/diascarolina/project-icu-prediction/blob/main/LICENSE)
 
-![banner image](https://i.imgur.com/wxaTMWn.png)
+<p align="center">
+  <img width="700" src="https://i.imgur.com/wxaTMWn.png">
+</p>
 
 # Table of Contents
 
@@ -9,8 +11,8 @@
 2. [Where did this **data** come from? What kind of **information** do we have in it?](#dat)
 3. [What **methodology** did we use for our analysis? What were the **steps taken**?](#method)
 4. [Main Findings & Predictions](#find)
-5. [Technologies Used](#tech)
-6. [Conclusion](#concl)
+5. [What can we **conclude** from this project?](#concl)
+6. [Technologies Used](#tech)
 7. [Acknowledgments](#ack)
 8. [References](#refs)
 9. [Contact](#contac)
@@ -88,7 +90,6 @@ This project was divided into two main notebooks:
 ### 🟢 Part 1: Data Cleaning & Analysis
 
 - [GitHub Link](https://github.com/diascarolina/project-icu-prediction/blob/main/notebooks/01_data_cleaning_and_analysis.ipynb) or [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GbV_StVWhE5GUlYblbrWsJWzcRP_Dq7f?usp=sharing)
-
 ### 🟢 Part 2: Machine Learning
 
 - [GitHub Link](https://github.com/diascarolina/project-icu-prediction/blob/main/notebooks/02_machine_learning_and_conclusion.ipynb) or [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bLzbafHgRTXe2T4fFutOzRASrsSSs2or?usp=sharing)
@@ -127,5 +128,18 @@ From the data analysis part, we've gathered some interesting information about t
     <img width="700" src="https://i.imgur.com/7fCAglN.png">
 </p>
 
-From the machine learning modelling, we used the metric **F1-score** that is a great way to balance precision and recall. We ended up with the following results from our modelling:
+From the machine learning modelling, we used the metric **F1-score**, that is a great way to balance precision and recall. We ended up with the following results from our modelling:
+
+<p align="center">
+    <img width="700" src="https://i.imgur.com/gJ2AqkY.png">
+</p>
+
+After taking a deeper look at the two best performing models, **LGBMClassifier** and **XGBoostClassifier**, we made our ICU prediction with the **LGBMClassifier** model. The final confusion matrix is:
+
+<p align="center">
+    <img width="400" src="https://i.imgur.com/635cX6H.png">
+</p>
+
+<a name="conc"></a>
+# What can we **conclude** from this project?
 
