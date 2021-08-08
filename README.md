@@ -177,6 +177,9 @@ The notebooks were produced in [Google Colab](https://colab.research.google.com/
 <a name="ack"></a>
 # Acknowledgments
 
+This is the final project from [Alura](https://www.alura.com.br/)'s Data Science Bootcamp. Thanks for all the lessons to the instructors Thiago Gonçalves, Guilherme Silveira, Allan Spadini and last but not least, Karoline Penteado.
+
+And thanks to my new friends who helped me all the way, Valquíria Alencar and Júnior Torres.
 
 <a name="refs"></a>
 # References
