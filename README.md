@@ -1,4 +1,4 @@
-# COVID-19 - Clinical Data to Assess Diagnosis
+# Covid-19 - Clinical Data to Assess Diagnosis
 [<img src="https://img.shields.io/badge/author-Carolina%20Dias-ff69b4?style=flat-square"/>](https://github.com/diascarolina) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg?style=flat-square)](https://github.com/diascarolina/project-icu-prediction/blob/main/LICENSE)
 
 <p align="center">
@@ -11,11 +11,12 @@
 2. [Where did this **data** come from? What kind of **information** do we have in it?](#dat)
 3. [What **methodology** did we use for our analysis? What were the **steps taken**?](#method)
 4. [Main Findings & Predictions](#find)
-5. [What can we **conclude** from this project?](#concl)
-6. [Technologies Used](#tech)
-7. [Acknowledgments](#ack)
-8. [References](#refs)
-9. [Contact](#contac)
+5. [What can we **conclude** from this project?](#conc)
+6. [For Future Projects...](#fut)
+7. [Technologies Used](#tech)
+8. [Acknowledgments](#ack)
+9. [References](#refs)
+10. [Contact](#contac)
 
 <a name="intro"></a>
 # What **problem** do we have here? What can we do to **help**?
@@ -143,3 +144,19 @@ After taking a deeper look at the two best performing models, **LGBMClassifier**
 <a name="conc"></a>
 # What can we **conclude** from this project?
 
+From the cleaning part, we see that some data preparation was need in order to get an accurate sense of the data and to obtain the right kind information for analysis.
+
+From the data analysis part, we can clearly see that many variables correlate with the need for a patient to go to the ICU. Age, gender, vital signs and blood results can be (anmd will be) very indicative and useful for our future machine learning modelling in predicting ICU admission.
+
+COVID-19 has taken an enormous toll on healthcare systems all around the globe. Healthcare professionals are overworked and this raises the need for a helping hand. This can be achieved in the form of Machine Learning models used to predict the need for ICU beds for COVID-19 patients.
+
+In this project we have seen that this is possible, but this tool can never be used alone (unless its predictions were right 100% of the time, but we're far from a model that achieves that). There needs to be a healthcare professional with better judgement than our models to assess the need for ICU admission.
+
+<a name="fut"></a>
+# For Future Projects...
+
+For next projects, better hyperparameter tuning could lead to improved results and predictions.
+
+This project could also be applied to other diseases, with the appropriate care and adaptations.
+
+An interesting idea could be to implement a web app (for example, a Streamlit application) that receives the relevant information for a patient (or for a group of patients) and returns the prediction for the need of said patient to go to the ICU. It could also output a confidence value for that prediction, so healthcare professionals could take a closer look at patients in which the model could not predict very well.
