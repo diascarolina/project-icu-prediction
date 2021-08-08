@@ -5,14 +5,15 @@
 
 # Table of Contents
 
-- [What **problem** do we have here? What can we do to **help**?](#intro)
-- [Where did this **data** come from? What kind of **information** do we have in it?](#dat)
-- [What **methodology** did we use for our analysis? What were the **steps taken**?](#method)
-- [Technologies Used](#tech)
-- [Conclusion](#concl)
-- [Acknowledgments](#ack)
-- [References](#refs)
-- [Contact](#contac)
+1. [What **problem** do we have here? What can we do to **help**?](#intro)
+2. [Where did this **data** come from? What kind of **information** do we have in it?](#dat)
+3. [What **methodology** did we use for our analysis? What were the **steps taken**?](#method)
+4. [Main Findings & Predictions](#find)
+5. [Technologies Used](#tech)
+6. [Conclusion](#concl)
+7. [Acknowledgments](#ack)
+8. [References](#refs)
+9. [Contact](#contac)
 
 <a name="intro"></a>
 # What **problem** do we have here? What can we do to **help**?
@@ -25,12 +26,12 @@ In this context, brazilian hospital Sírio-Libânes [published a dataset at Kagg
 
 The tasks at hand are:
 
-**Task 01:** Predict admission to the ICU of confirmed COVID-19 cases.
+🟢 **Task 01:** Predict admission to the ICU of confirmed COVID-19 cases.
 
 Based on the data available, is it feasible to predict which patients will need intensive care unit support?
 The aim is to provide tertiary and quarternary hospitals with the most accurate answer, so ICU resources can be arranged or patient transfer can be scheduled.
 
-**Task 02:** Predict NOT admission to the ICU of confirmed COVID-19 cases.
+🟢 **Task 02:** Predict NOT admission to the ICU of confirmed COVID-19 cases.
 
 Based on the subsample of widely available data, is it feasible to predict which patients will need intensive care unit support?
 The aim is to provide local and temporary hospitals a good enough answer, so frontline physicians can safely discharge and remotely follow up with these patients.
@@ -46,9 +47,7 @@ The data was taken directly from the [Kaggle problem](https://www.kaggle.com/S%C
 
 > Data has been cleaned and **scaled** by column according to MinMaxScaler to fit between -1 and 1.
 
-_Disclaimer._ It is highly recommended that we apply a scaler to the data only **after** splitting between train and test data (_source:_ [Data Normalization Before or After Splitting a Data Set?](https://www.baeldung.com/cs/data-normalization-before-after-splitting-set)).  But since our data is already scaled, we won't go in too much detail in this aspect.
-
-**From our dataset we have:**
+🟢 **From our dataset we have:**
 
 1. Patient demographic information (03 columns)
 2. Patient previous grouped diseases (09 columns)
@@ -81,8 +80,6 @@ Window | Description
 **6-12** | From 6 to 12 hours of the admission
 **Above-12** | Above 12 hours from admission
 
-> Beware **NOT to use the data when the target variable is present**, as it is unknown the order of the event (maybe the target event happened before the results were obtained). They were kept there so we can grow this dataset in other outcomes latter on.
-
 <a name="method"></a>
 # What **methodology** did we use for our analysis? What were the **steps taken**?
 
@@ -111,6 +108,24 @@ Then we **analysed** the data as such:
 
 Finally, for the **machine learning** part we followed:
 
-<p aligh="center">
+<p align="center">
     <img width="700" src="https://i.imgur.com/BLDhdVY.png">
 </p>
+
+<a name="find"></a>
+# Main Findings & Predictions
+
+After our data cleaning process, we ended up with
+
+- **352 rows**, one for each patient,
+- **98** features and
+- **1** target variable, our ```ICU``` column.
+
+From the data analysis part, we've gathered some interesting information about the differences between patients that need to go to the ICU and those who did not. We've seen that age and gender play an important role that could be used in helping the prediction. For example, we can see here how the age group influences the need for ICU beds for patients:
+
+<p align="center">
+    <img width="700" src="https://i.imgur.com/7fCAglN.png">
+</p>
+
+From the machine learning modelling, we used the metric **F1-score** that is a great way to balance precision and recall. We ended up with the following results from our modelling:
+
