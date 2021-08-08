@@ -1,13 +1,13 @@
 # COVID-19 - Clinical Data to Assess Diagnosis
 [<img src="https://img.shields.io/badge/author-Carolina%20Dias-ff69b4?style=flat-square"/>](https://github.com/diascarolina) [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=flat-square&logo=Jupyter)](https://jupyter.org/try) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg?style=flat-square)](https://github.com/diascarolina/project-icu-prediction/blob/main/LICENSE)
 
-![]()
+![banner image](https://i.imgur.com/wxaTMWn.png)
 
 # Table of Contents
 
 - [What **problem** do we have here? What can we do to **help**?](#intro)
 - [Where did this **data** come from? What kind of **information** do we have in it?](#dat)
-- [Methodology](#method)
+- [What **methodology** did we use for our analysis? What were the **steps taken**?](#method)
 - [Technologies Used](#tech)
 - [Conclusion](#concl)
 - [Acknowledgments](#ack)
@@ -83,11 +83,34 @@ Window | Description
 
 > Beware **NOT to use the data when the target variable is present**, as it is unknown the order of the event (maybe the target event happened before the results were obtained). They were kept there so we can grow this dataset in other outcomes latter on.
 
-**Examples obtained from Kaggle description:**
+<a name="method"></a>
+# What **methodology** did we use for our analysis? What were the **steps taken**?
 
-![](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F1591620%2Fb1bc424df771a4d2d3b3088606d083e6%2FTimeline%20Example%20Best.png?generation=1594740856017996&alt=media)
+This project was divided into two main notebooks:
 
-![](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F1591620%2F77ca2b4635bc4dd7800e1c777fed9de1%2FTimeline%20Example%20No.png?generation=1594740873237462&alt=media)
+### 🟢 Part 1: Data Cleaning & Analysis
+
+- [GitHub Link](https://github.com/diascarolina/project-icu-prediction/blob/main/notebooks/01_data_cleaning_and_analysis.ipynb) or [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GbV_StVWhE5GUlYblbrWsJWzcRP_Dq7f?usp=sharing)
+
+### 🟢 Part 2: Machine Learning
+
+- [GitHub Link](https://github.com/diascarolina/project-icu-prediction/blob/main/notebooks/02_machine_learning_and_conclusion.ipynb) or [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bLzbafHgRTXe2T4fFutOzRASrsSSs2or?usp=sharing)
 
 
+For the first part we followed these **data cleaning** steps:
 
+<p align="center">
+  <img width="700" src="https://i.imgur.com/1AJyC0O.png">
+</p>
+
+Then we **analysed** the data as such:
+
+<p align="center">
+  <img width="700" src="https://i.imgur.com/MakbgMD.png">
+</p>
+
+Finally, for the **machine learning** part we followed:
+
+<p aligh="center">
+    <img width="700" src="https://i.imgur.com/BLDhdVY.png">
+</p>
