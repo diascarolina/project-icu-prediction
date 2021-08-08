@@ -160,3 +160,28 @@ For next projects, better hyperparameter tuning could lead to improved results a
 This project could also be applied to other diseases, with the appropriate care and adaptations.
 
 An interesting idea could be to implement a web app (for example, a Streamlit application) that receives the relevant information for a patient (or for a group of patients) and returns the prediction for the need of said patient to go to the ICU. It could also output a confidence value for that prediction, so healthcare professionals could take a closer look at patients in which the model could not predict very well.
+
+<a name="tech"></a>
+# Technologies Used
+
+The notebooks were produced in [Google Colab](https://colab.research.google.com/) with the following libraries:
+- Pandas 1.0.5
+- Numpy 1.19.1
+- Matplotlib 3.2.2
+- Seaborn 0.11.1
+- Sklearn 0.23.1
+- LightGBM 2.3.1
+- XGBoost 1.1.1
+- Lazy Predict 0.2.9
+
+<a name="ack"></a>
+# Acknowledgments
+
+
+<a name="refs"></a>
+# References
+
+
+
+<a name="contac"></a>
+# Contact
